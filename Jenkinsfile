@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Cloning from git') {
             steps {
-                git branch: 'main', url: 'https://github.com/Muhammad-Saad12/mlops-task3'
+                git branch: 'master', url: 'https://github.com/Muhammad-Saad12/mlops-task3'
             }
         }
 
