@@ -10,7 +10,7 @@ pipeline {
 
         stage('Installation of dependencies') {
             steps {
-                bat 'C:\\WINDOWS\\system32\\cmd.exe /c pip3 install -r requirement.txt'
+                bat 'pip3 install -r requirement.txt'
                 echo 'Dependencies successfully installed!'
             }
         }
