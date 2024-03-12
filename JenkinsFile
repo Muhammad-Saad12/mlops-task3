@@ -2,7 +2,6 @@ pipeline {
     agent any
     
     stages {
-
         stage('Cloning from git') {
             steps {
                 git branch: 'main', url: 'https://github.com/Muhammad-Saad12/mlops-task3'
@@ -28,13 +27,11 @@ pipeline {
                 script {
                     if (env.BRANCH_NAME == 'main') {
                         echo 'Deploying to production...'
-                        
                     } else {
                         echo 'Deploying to development server...'
-                        
                     }
                 }
             }
-}
-}
+        }
+    }
 }
